@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TEDx Admin Panel | Al-Raheem Technologies</title>
+    <link rel="icon" type="image/x-icon" sizes="38x38" href="favicon.ico">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body { background: #f3f4f8; }
+
+        .admin-topbar {
+            background: #000103;
+            color: #fff;
+            padding: 14px 0;
+        }
+
+        .admin-topbar img { width: 36px; border-radius: 50%; margin-right: 10px; }
+
+        .login-wrap {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000103;
+        }
+
+        .login-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 36px;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+        }
+
+        .stat-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .stat-card h3 { color: #1842b6; margin-bottom: 0; }
+        .stat-card span { color: #6c757d; font-size: 0.85rem; }
+
+        .table-wrap {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        table.reg-table { font-size: 0.88rem; }
+        table.reg-table th { white-space: nowrap; color: #495057; border-bottom-width: 2px; }
+        table.reg-table td { vertical-align: middle; }
+
+        .badge-status { text-transform: capitalize; }
+        .badge-pending { background: #ffc107; color: #000; }
+        .badge-approved { background: #26d48c; color: #000; }
+        .badge-rejected { background: #dc3545; }
+
+        .btn-xs { padding: 2px 8px; font-size: 0.78rem; }
+
+        #loadingRow td { text-align: center; padding: 30px 0; color: #999; }
+
+        .filters .form-control, .filters .form-select { font-size: 0.9rem; }
+
+        #logoutBtn { cursor: pointer; }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGIN SCREEN -->
+    <div class="login-wrap" id="loginScreen">
+        <div class="login-card">
+            <div class="text-center mb-4">
+                <img src="logo/alraheem-tech-logo.png" style="width:50px;border-radius:50%;" alt="Logo">
+                <h4 class="mt-2 mb-0">TEDx Admin Panel</h4>
+                <p class="text-muted small">Delegate Affairs Team</p>
+            </div>
+            <div class="alert alert-danger d-none" id="loginError"></div>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" id="loginUser" required autocomplete="username">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="loginPass" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="d-none">
+        <div class="admin-topbar">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="logo/alraheem-tech-logo.png" alt="Logo">
+                    <span class="fw-bold">TEDx Delegate Affairs — Admin Panel</span>
+                </div>
+                <span id="logoutBtn" class="text-secondary"><i class="fas fa-sign-out-alt"></i> Logout</span>
+            </div>
+        </div>
+
+        <div class="container py-4">
+
+            <div class="row g-3 mb-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card"><h3 id="statTotal">0</h3><span>Total Registrations</span></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card"><h3 id="statPending">0</h3><span>Pending Review</span></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card"><h3 id="statApproved">0</h3><span>Approved</span></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card"><h3 id="statCheckedIn">0</h3><span>Checked-in</span></div>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <div class="row g-2 filters mb-3 align-items-center">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search by Name, CNIC, Email, or Phone">
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select" id="statusFilter">
+                            <option value="">All Status</option>
+                            <option value="pending">Pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select" id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="General">General</option>
+                            <option value="Guest">Guest</option>
+                            <option value="Sponsor">Sponsor</option>
+                            <option value="Speaker">Speaker</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select" id="checkinFilter">
+                            <option value="">Check-in: All</option>
+                            <option value="true">Checked-in</option>
+                            <option value="false">Not checked-in</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 text-md-end">
+                        <button class="btn btn-secondary w-100" id="exportBtn"><i class="fas fa-file-csv"></i> Export Checked-in (CSV)</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover reg-table align-middle">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>CNIC</th>
+                                <th>Contact</th>
+                                <th>Category</th>
+                                <th>Payment</th>
+                                <th>Status</th>
+                                <th>Check-in</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="regTableBody">
+                            <tr id="loadingRow"><td colspan="8">Loading registrations…</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshot preview modal -->
+    <div class="modal fade" id="screenshotModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Payment Screenshot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="screenshotImg" src="" style="max-width:100%;border-radius:8px;" alt="Payment screenshot">
+                    <p id="screenshotFallback" class="text-muted d-none">No screenshot uploaded, or file is a PDF — <a id="screenshotLink" href="#" target="_blank">open file</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/tedx-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const loginScreen = document.getElementById('loginScreen');
+        const dashboard = document.getElementById('dashboard');
+        const loginForm = document.getElementById('loginForm');
+        const loginError = document.getElementById('loginError');
+
+        let TOKEN = sessionStorage.getItem('tedx_admin_token') || '';
+        let allRegs = [];
+
+        function showDashboard() {
+            loginScreen.classList.add('d-none');
+            dashboard.classList.remove('d-none');
+            loadRegistrations();
+        }
+
+        if (TOKEN) showDashboard();
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            loginError.classList.add('d-none');
+            const username = document.getElementById('loginUser').value;
+            const password = document.getElementById('loginPass').value;
+
+            try {
+                const res = await fetch(`${TEDX_API_BASE}/api/admin/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await res.json();
+                if (!res.ok || !data.success) throw new Error(data.message || 'Login failed');
+
+                TOKEN = data.token;
+                sessionStorage.setItem('tedx_admin_token', TOKEN);
+                showDashboard();
+            } catch (err) {
+                loginError.textContent = err.message;
+                loginError.classList.remove('d-none');
+            }
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            sessionStorage.removeItem('tedx_admin_token');
+            TOKEN = '';
+            dashboard.classList.add('d-none');
+            loginScreen.classList.remove('d-none');
+        });
+
+        async function apiFetch(path, options = {}) {
+            const res = await fetch(`${TEDX_API_BASE}${path}`, {
+                ...options,
+                headers: {
+                    ...(options.headers || {}),
+                    'x-admin-token': TOKEN
+                }
+            });
+            if (res.status === 401) {
+                sessionStorage.removeItem('tedx_admin_token');
+                TOKEN = '';
+                dashboard.classList.add('d-none');
+                loginScreen.classList.remove('d-none');
+                throw new Error('Session expired. Please log in again.');
+            }
+            return res;
+        }
+
+        function buildQuery() {
+            const params = new URLSearchParams();
+            const search = document.getElementById('searchInput').value.trim();
+            const status = document.getElementById('statusFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+            const checkedIn = document.getElementById('checkinFilter').value;
+            if (search) params.set('search', search);
+            if (status) params.set('status', status);
+            if (category) params.set('category', category);
+            if (checkedIn) params.set('checkedIn', checkedIn);
+            return params.toString();
+        }
+
+        async function loadRegistrations() {
+            const tbody = document.getElementById('regTableBody');
+            tbody.innerHTML = '<tr id="loadingRow"><td colspan="8">Loading registrations…</td></tr>';
+            try {
+                const res = await apiFetch(`/api/admin/registrations?${buildQuery()}`);
+                const data = await res.json();
+                allRegs = data.registrations || [];
+                renderTable(allRegs);
+                renderStats(allRegs);
+            } catch (err) {
+                tbody.innerHTML = `<tr><td colspan="8" class="text-danger text-center">${err.message}</td></tr>`;
+            }
+        }
+
+        function renderStats(regs) {
+            document.getElementById('statTotal').textContent = regs.length;
+            document.getElementById('statPending').textContent = regs.filter(r => r.status === 'pending').length;
+            document.getElementById('statApproved').textContent = regs.filter(r => r.status === 'approved').length;
+            document.getElementById('statCheckedIn').textContent = regs.filter(r => r.checkedIn).length;
+        }
+
+        function renderTable(regs) {
+            const tbody = document.getElementById('regTableBody');
+            if (regs.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted py-4">No registrations found.</td></tr>';
+                return;
+            }
+            tbody.innerHTML = regs.map(r => `
+                <tr>
+                    <td>
+                        <strong>${escapeHtml(r.fullName)}</strong><br>
+                        <span class="text-muted small">${escapeHtml(r.city || '')}</span>
+                    </td>
+                    <td>${escapeHtml(r.cnic)}</td>
+                    <td>
+                        ${r.email ? `<div class="small">${escapeHtml(r.email)}</div>` : ''}
+                        ${r.whatsapp ? `<div class="small text-muted">${escapeHtml(r.whatsapp)}</div>` : ''}
+                    </td>
+                    <td>${escapeHtml(r.category)}</td>
+                    <td>
+                        <div class="small">${escapeHtml(r.paymentMethod || '-')}</div>
+                        <div class="small text-muted">${escapeHtml(r.transactionId || '')}</div>
+                        ${r.paymentScreenshot ? `<button class="btn btn-link btn-xs p-0" onclick="viewScreenshot('${r.id}')">View screenshot</button>` : '<span class="text-muted small">No file</span>'}
+                    </td>
+                    <td><span class="badge badge-status badge-${r.status}">${r.status}</span></td>
+                    <td>${r.checkedIn ? '<span class="badge bg-success">Checked-in</span>' : '<span class="badge bg-light text-dark">No</span>'}</td>
+                    <td>
+                        <div class="d-flex flex-wrap gap-1">
+                            <button class="btn btn-outline-success btn-xs" onclick="updateReg('${r.id}','approve')" ${r.status === 'approved' ? 'disabled' : ''}>Approve</button>
+                            <button class="btn btn-outline-danger btn-xs" onclick="updateReg('${r.id}','reject')" ${r.status === 'rejected' ? 'disabled' : ''}>Reject</button>
+                            ${r.checkedIn
+                                ? `<button class="btn btn-outline-secondary btn-xs" onclick="updateReg('${r.id}','uncheckin')">Undo Check-in</button>`
+                                : `<button class="btn btn-primary btn-xs" onclick="updateReg('${r.id}','checkin')">Check-in</button>`}
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function escapeHtml(str) {
+            return String(str ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+        }
+
+        async function updateReg(id, action) {
+            try {
+                await apiFetch(`/api/admin/registrations/${id}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action })
+                });
+                loadRegistrations();
+            } catch (err) {
+                alert(err.message);
+            }
+        }
+
+        async function viewScreenshot(id) {
+            const reg = allRegs.find(r => r.id === id);
+            if (!reg || !reg.paymentScreenshot) return;
+            try {
+                const res = await apiFetch(reg.paymentScreenshot);
+                const blob = await res.blob();
+                const url = URL.createObjectURL(blob);
+                const isImage = blob.type.startsWith('image/');
+                document.getElementById('screenshotImg').classList.toggle('d-none', !isImage);
+                document.getElementById('screenshotImg').src = isImage ? url : '';
+                document.getElementById('screenshotFallback').classList.toggle('d-none', isImage);
+                document.getElementById('screenshotLink').href = url;
+                new bootstrap.Modal(document.getElementById('screenshotModal')).show();
+            } catch (err) {
+                alert('Could not load screenshot: ' + err.message);
+            }
+        }
+
+        document.getElementById('exportBtn').addEventListener('click', async () => {
+            try {
+                const res = await apiFetch('/api/admin/export/checked-in');
+                const blob = await res.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'checked-in-delegates.csv';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            } catch (err) {
+                alert(err.message);
+            }
+        });
+
+        let searchTimeout;
+        document.getElementById('searchInput').addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(loadRegistrations, 350);
+        });
+        document.getElementById('statusFilter').addEventListener('change', loadRegistrations);
+        document.getElementById('categoryFilter').addEventListener('change', loadRegistrations);
+        document.getElementById('checkinFilter').addEventListener('change', loadRegistrations);
+    </script>
+</body>
+
+</html>
