@@ -192,25 +192,19 @@
         display: block;
         visibility: hidden;
         top: 100%;
-<<<<<<< HEAD
         align-items: baseline;
         gap: 6px;
         line-height: 1;
-=======
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
         transition: .5s;
->>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
         opacity: 0;
     }
 }
 
 .navbar .nav-item:hover .dropdown-menu {
-<<<<<<< HEAD
-        margin-top: 0;
-=======
     transform: rotateX(0deg);
->>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
+    margin-top: 0;
     visibility: visible;
     transition: .5s;
     opacity: 1;
@@ -468,12 +462,9 @@
 }
 
 .services-content-icon img {
-<<<<<<< HEAD
     display: block;
     margin-left: auto;
     margin-right: auto;
-=======
->>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
     transition: filter 0.4s ease;
     filter: drop-shadow(0 4px 12px rgba(3, 43, 243, 0.15));
     width: 25%;
