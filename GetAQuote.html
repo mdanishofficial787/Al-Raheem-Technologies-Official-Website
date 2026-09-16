@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Al-Raheem Technologies</title>
+        <link rel="icon" type="image/x-icon" sizes="38x38" href="favicon.ico">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Easezen+Solutions,+Hasan+Chowk,+Mureer,+Murree+Rd,+Chamanzar+Colony,+Rawalpindi,+46000" target="_blank">
+                                <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                            </a>
+                            <script>
+                                document.getElementById('map-link').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    
+                                    fetch(this.href, { method: 'HEAD' })
+                                        .then(response => {
+                                            if (response.ok) {
+                                                window.open(this.href, '_blank');
+                                            } else {
+                                                alert('Map service unavailable');
+                                            }
+                                        })
+                                        .catch(error => {
+                                            alert('Map service unavailable');
+                                        });
+                                });
+                            </script>
+                            Earn Innovation Hub, Hasan Chowk, Mureer, Murree Rd, Chamanzar Colony, Rawalpindi, 46000
+                        </small>
+                        <small class="me-3 text-white-50"><a href="mailto:alraheemtechnologies1@gmail.com?Subject=Some%20subject"><i class="fas fa-envelope me-2 text-secondary"></i></a>alraheemtechnologies1@gmail.com</small>
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>We Build New And Innovative Apps</small></div>
+                    <div class="top-link">
+                        <a href="https://www.facebook.com/alraheem.technologies.2024" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="https://x.com/alraheemtech?lang=en" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                        <a href="https://www.instagram.com/alraheemtech/?hl=en" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="https://www.linkedin.com/company/alraheemtech/" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand py-2">
+                        <div class="brand-container">
+                            <img class="brand-logo me-2" src="logo/alraheem-tech-logo.png" alt="Logo">
+                            <div class="brand-text">
+                                <span class="brand-title">Al-Raheem <span class="text-secondary">Technologies</span></span>
+                                <span class="brand-sub">Pvt Ltd</span>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="project.html" class="nav-item nav-link">Projects</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex px-3 align-items-center">
+                        <div id="phone-tada" class="d-flex align-items-center me-3">
+                          <a href="tel: +923317888806" class="position-relative animated tada infinite">
+                             <i class="fa fa-phone-alt text-white fa-2x"></i>
+                          <div class="position-absolute" style="top: -7px; left: 20px;">
+                          <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                         </div>
+                            </a>
+                             </div>
+                    </div>
+                    
+                        <!-- <div class="d-flex flex-column pe-4 border-end text-white">
+                            <span class="text-white-30">Call:<span class="text-secondary">  +92</span>
+                            <span class="text-secondary">3317888806</span>
+                        </div> -->
+                        <div class="d-flex align-items-center ms-4 position-relative animated tada infinite">
+                            <!-- <form id="searchForm" class="d-flex">
+                                <input type="text" name="query" id="searchQuery" placeholder="Search..." class="form-control" style="width: 150px;">
+                            </form> -->
+                            <a href="GetAQuote.html" class="me-2"><button type="button" class="btn btn-secondary rounded-pill carousel-content-btn3 animated fadeInLeft" style="padding: 12px 24px; margin: 0 10px;">Get A Quote</button></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#searchForm').on('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+        
+                    var query = $('#searchQuery').val();
+                    if (query.trim() === '') {
+                        alert('Please enter a search query');
+                        return;
+                    }
+        
+                    
+                    performSearch(query);
+                }); 
+        
+                function performSearch(query) {
+            // Convert query to lowercase for case-insensitive comparison
+            var normalizedQuery = query.trim().toLowerCase();
+        
+            // Define a mapping of queries to pages
+            var pageMappings = {
+                'home': 'index.html',
+                'about': 'about.html',
+                'contact': 'contact.html',
+                'services': 'service.html',
+                'projects': 'project.html'
+            };
+        
+            // Check if the query matches one of the predefined pages
+            if (pageMappings[normalizedQuery]) {
+                // Redirect to the corresponding page
+                window.location.href = pageMappings[normalizedQuery];
+            } else {
+                // Display "No search results found" message
+                alert('No search results found for: ' + query);
+            }
+        }
+        
+            });
+        </script>               
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Navbar End -->
+
+       <!-- Get a Quote Section Start -->
+<div class="container-fluid px-0" style=" padding: 0px 0;
+                background-image: url('newimgs/webback.jpg');
+                background-size: cover; /* Cover the entire viewport */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Don't repeat the image */
+                background-attachment: fixed; /* Keep the image fixed when scrolling */
+                /* Optional: Add a background color as fallback */
+                background-color: #f0f0f0;
+">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 p-5">
+            <div class="get-a-quote-content" style="background-color: #111010; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h6 class="text-secondary h6" style="color: #34a853;">Al Raheem Technologies Pvt Ltd</h6>
+                <h1 class="text-white  mb-2" style="color: #198754;">Get a Quote</h1>
+                <p class="mb-2 text-gray fs-5" style="color: #ffffff;">Please fill out the form below to get a quote for your project.</p>
+                <form id="quoteForm">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="name" class="text-gray" style="color: #ffffff;">Name:</label>
+                                <input type="text" required class="form-control" id="name" placeholder="Your Name" style="height: 45px; margin-bottom: 20px; border-color: #ccc;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="email" class="text-gray" style="color: #ffffff;">Email:</label>
+                                <input type="email" required class="form-control" id="email" placeholder="your@email.com" style="height: 45px; margin-bottom: 20px; border-color: #ccc;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="phone" class="text-gray" style="color: #ffffff;">Phone:</label>
+                                <input type="tel" required class="form-control" id="phone" placeholder="Your Phone Number" style="height: 45px; margin-bottom: 20px; border-color: #ccc;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="phone" class="text-gray" style="color: #ffffff;">Phone:</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" style="height: 45px; margin-bottom: 20px; border-color: #ccc;">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="project-type" class="text-gray" style="color: #ffffff;">Project Type:</label>
+                                <select class="form-control" id="project-type" style="height: 45px; margin-bottom: 20px; border-color: #ccc;">
+                                    <option value="">Select Project Type</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-app-development">Mobile App Development</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="reason" class="text-gray" style="color: #ffffff;">Reason for Inquiry:</label>
+                        <textarea class="form-control" id="reason" required rows="3" placeholder="Please describe your project requirements" style="margin-bottom: 20px; border-color: #ccc;"></textarea>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <button type="submit" class="px-2 py-sm-2 px-sm-3 btn btn-primary rounded-pill" style="background-color: #24b06f; border-color: #2196f3; color: #fff;">Get a Quote</button>
+                        <button type="button" id="openConsultationBtn" class="px-2 py-sm-2 px-sm-3 btn rounded-pill" style="background-color: transparent; border: 2px solid #00ff88; color: #00ff88; font-weight: 600;">
+                            <i class="fa fa-calendar-check me-2"></i>Book a Consultation
+                        </button>
+                    </div>
+                </form>
+                <script>
+                    function showToast(message, type = "success") {
+                        let toast = document.getElementById("toast");
+                        toast.className = `toast show ${type}`;
+                        toast.innerText = message;
+                        setTimeout(() => {
+                            toast.classList.remove("show");
+                        }, 3000); // Hide after 3 seconds
+                        }
+
+
+
+                    document.getElementById("quoteForm").addEventListener("submit", async function(event) {
+                      event.preventDefault();
+                  
+                      let formData = {
+                        name: document.getElementById("name").value,
+                        email: document.getElementById("email").value,
+                        phone: document.getElementById("phone").value,
+                        message: document.getElementById("reason").value
+                      };
+                  
+                      try {
+                        let response = await fetch("https://alraheem-backend.vercel.app/send-email", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify(formData)
+                        });
+                  
+                        let result = await response.json();
+                        // console.log(result);
+                        if (result.success) {
+                        //   alert("Quote request sent successfully!");
+                        showToast("Quote request sent successfully!", "success");
+                        // Clear form fields after success
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("phone").value = "";
+                        document.getElementById("reason").value = "";
+                        } else {
+                        //   alert("Failed to send request. Try again.");
+                        showToast("Failed to send request. Try again.", "error");
+                        }
+                      } catch (error) {
+                        // alert("Error sending request.");
+                        showToast("Error sending request.", "error");
+                      }
+                    });
+                  </script>
+
+                  <!-- Book a Consultation Modal -->
+                  <div id="consultationOverlay" class="consultation-overlay">
+                    <div class="consultation-modal">
+                        <button type="button" id="closeConsultationBtn" class="consultation-close" aria-label="Close">&times;</button>
+
+                        <div id="consultationStepBooking">
+                            <h2 class="consultation-title">Book Your Free Consultation</h2>
+                            <p class="consultation-subtitle">Al Raheem Technologies Pvt Ltd</p>
+
+                            <h4 class="consultation-heading">Select Date</h4>
+                            <div class="mini-calendar" id="miniCalendar">
+                                <div class="mini-calendar-nav">
+                                    <button type="button" id="prevMonthBtn" class="cal-nav-btn">&#10094;</button>
+                                    <span id="calMonthLabel" class="cal-month-label"></span>
+                                    <button type="button" id="nextMonthBtn" class="cal-nav-btn">&#10095;</button>
+                                </div>
+                                <div class="mini-calendar-weekdays">
+                                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                </div>
+                                <div class="mini-calendar-days" id="calendarDays"></div>
+                            </div>
+
+                            <h4 class="consultation-heading">Available Consultation Slots</h4>
+                            <div class="slots" id="slotsContainer"></div>
+
+                            <div id="bookingConfirmBox" class="booking-confirm-box" style="display:none;">
+                                <p><strong>Name:</strong> <span id="confirmNameLbl"></span></p>
+                                <p><strong>Date:</strong> <span id="confirmDateLbl"></span></p>
+                                <p><strong>Time:</strong> <span id="confirmSlotLbl"></span></p>
+                                <button type="button" id="confirmBookingBtn" class="consult-btn">Confirm Booking</button>
+                            </div>
+                        </div>
+
+                        <div id="consultationStepSuccess" class="success-message" style="display:none;">
+                            <h2>&#9989; Booking Confirmed</h2>
+                            <p>Your appointment has been booked successfully. A confirmation email has been sent to you.</p>
+                            <p><strong>Date:</strong> <span id="successDateLbl"></span></p>
+                            <p><strong>Slot:</strong> <span id="successSlotLbl"></span></p>
+                            <button type="button" id="bookAnotherBtn" class="consult-btn">Book Another Appointment</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <style>
+                    .consultation-overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0; left: 0; right: 0; bottom: 0;
+                        background: rgba(0, 0, 0, 0.75);
+                        z-index: 2000;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                    }
+                    .consultation-overlay.show {
+                        display: flex;
+                    }
+                    .consultation-modal {
+                        position: relative;
+                        max-width: 560px;
+                        width: 100%;
+                        max-height: 90vh;
+                        overflow-y: auto;
+                        margin: auto;
+                        padding: 30px;
+                        text-align: center;
+                        background: rgba(15, 15, 15, 0.98);
+                        border: 1px solid #00ff88;
+                        border-radius: 20px;
+                        box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+                        color: #ffffff;
+                        font-family: "Segoe UI", sans-serif;
+                    }
+                    .consultation-close {
+                        position: absolute;
+                        top: 12px;
+                        right: 16px;
+                        background: transparent;
+                        border: none;
+                        color: #00ff88;
+                        font-size: 28px;
+                        line-height: 1;
+                        cursor: pointer;
+                    }
+                    .consultation-title {
+                        color: #00ff88;
+                        font-size: 28px;
+                        margin-bottom: 4px;
+                    }
+                    .consultation-subtitle {
+                        color: #ffffff;
+                        margin-bottom: 15px;
+                    }
+                    .consultation-heading {
+                        color: #00ff88;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                    }
+                    .mini-calendar {
+                        max-width: 340px;
+                        margin: 0 auto;
+                        background: #111;
+                        border: 1px solid #00ff88;
+                        border-radius: 16px;
+                        padding: 14px;
+                        box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+                    }
+                    .mini-calendar-nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                    }
+                    .cal-nav-btn {
+                        background: transparent;
+                        border: none;
+                        color: #00ff88;
+                        font-size: 16px;
+                        cursor: pointer;
+                        padding: 4px 10px;
+                    }
+                    .cal-month-label {
+                        color: #ffffff;
+                        font-weight: 600;
+                    }
+                    .mini-calendar-weekdays {
+                        display: grid;
+                        grid-template-columns: repeat(7, 1fr);
+                        color: #00ff88;
+                        font-weight: bold;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        margin-bottom: 6px;
+                    }
+                    .mini-calendar-days {
+                        display: grid;
+                        grid-template-columns: repeat(7, 1fr);
+                        gap: 4px;
+                    }
+                    .cal-day-btn {
+                        background: transparent;
+                        border: none;
+                        color: #ffffff;
+                        padding: 8px 0;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        transition: all 0.2s ease;
+                    }
+                    .cal-day-btn:hover:not(:disabled) {
+                        background: rgba(0, 255, 136, 0.25);
+                    }
+                    .cal-day-btn.selected {
+                        background: #00ff88 !important;
+                        color: #000 !important;
+                        font-weight: bold;
+                    }
+                    .cal-day-btn:disabled {
+                        color: #555;
+                        cursor: not-allowed;
+                    }
+                    .cal-day-empty {
+                        visibility: hidden;
+                    }
+                    .slots {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-top: 10px;
+                    }
+                    .slot-btn {
+                        background: transparent;
+                        color: white;
+                        border: 2px solid #00ff88;
+                        padding: 10px 14px;
+                        border-radius: 12px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        transition: all 0.3s ease;
+                    }
+                    .slot-btn:hover:not(:disabled) {
+                        background: #00ff88;
+                        color: black;
+                    }
+                    .slot-btn.active {
+                        background: #00ff88;
+                        color: black;
+                        font-weight: bold;
+                    }
+                    .slot-btn.booked {
+                        background: #ff4d4d !important;
+                        border-color: #ff4d4d !important;
+                        color: white !important;
+                        cursor: not-allowed;
+                        opacity: 0.85;
+                    }
+                    .booking-confirm-box {
+                        margin-top: 20px;
+                        padding: 16px;
+                        border-radius: 15px;
+                        border: 1px solid #00ff88;
+                        background: rgba(0, 255, 136, 0.08);
+                        text-align: left;
+                    }
+                    .booking-confirm-box p { margin: 4px 0; }
+                    .consult-btn {
+                        background: #00ff88;
+                        color: #000;
+                        border: none;
+                        padding: 12px 26px;
+                        border-radius: 30px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        margin-top: 10px;
+                    }
+                    .consult-btn:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+                    }
+                    .success-message {
+                        padding: 10px;
+                        border-radius: 15px;
+                        background: rgba(0, 255, 136, 0.12);
+                        border: 1px solid #00ff88;
+                        color: #00ff88;
+                    }
+                    .success-message p { color: #ffffff; }
+                    @media (max-width: 480px) {
+                        .consultation-modal { padding: 20px; }
+                        .slot-btn { width: 100%; }
+                    }
+                    /* Ensure toast notifications appear above the consultation modal */
+                    #toast {
+                        z-index: 2500 !important;
+                    }
+                  </style>
+
+                  <script>
+                    (function () {
+                        var overlay = document.getElementById("consultationOverlay");
+                        var openBtn = document.getElementById("openConsultationBtn");
+                        var closeBtn = document.getElementById("closeConsultationBtn");
+                        var calMonthLabel = document.getElementById("calMonthLabel");
+                        var calendarDays = document.getElementById("calendarDays");
+                        var prevMonthBtn = document.getElementById("prevMonthBtn");
+                        var nextMonthBtn = document.getElementById("nextMonthBtn");
+                        var slotsContainer = document.getElementById("slotsContainer");
+                        var bookingConfirmBox = document.getElementById("bookingConfirmBox");
+                        var confirmNameLbl = document.getElementById("confirmNameLbl");
+                        var confirmDateLbl = document.getElementById("confirmDateLbl");
+                        var confirmSlotLbl = document.getElementById("confirmSlotLbl");
+                        var confirmBookingBtn = document.getElementById("confirmBookingBtn");
+                        var stepBooking = document.getElementById("consultationStepBooking");
+                        var stepSuccess = document.getElementById("consultationStepSuccess");
+                        var successDateLbl = document.getElementById("successDateLbl");
+                        var successSlotLbl = document.getElementById("successSlotLbl");
+                        var bookAnotherBtn = document.getElementById("bookAnotherBtn");
+
+                        var slots = [
+                            "11:30 AM - 12:00 PM",
+                            "12:00 PM - 1:00 PM",
+                            "1:00 PM - 2:00 PM",
+                            "2:00 PM - 3:00 PM",
+                            "3:00 PM - 3:30 PM",
+                            "9:30 PM - 10:00 PM",
+                            "10:00 PM - 11:00 PM",
+                            "11:00 PM - 12:00 AM"
+                        ];
+
+                        var today = new Date();
+                        today.setHours(0, 0, 0, 0);
+
+                        var viewYear = today.getFullYear();
+                        var viewMonth = today.getMonth();
+                        var selectedDate = null;
+                        var selectedSlot = null;
+
+                        var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+                        var currentBookedSlots = [];
+                        var slotsLoading = false;
+
+                        async function fetchBookedSlots(dateStr) {
+                            slotsLoading = true;
+                            renderSlots();
+                            try {
+                                var response = await fetch(
+                                    "https://alraheem-backend.vercel.app/booked-slots?date=" + encodeURIComponent(dateStr)
+                                );
+                                var result = await response.json();
+                                currentBookedSlots = result.success ? result.bookedSlots : [];
+                            } catch (error) {
+                                currentBookedSlots = [];
+                            } finally {
+                                slotsLoading = false;
+                                renderSlots();
+                            }
+                        }
+
+                        function formatDateStr(d) {
+                            return d.toDateString();
+                        }
+
+                        function renderCalendar() {
+                            calMonthLabel.textContent = monthNames[viewMonth] + " " + viewYear;
+                            calendarDays.innerHTML = "";
+
+                            var firstDay = new Date(viewYear, viewMonth, 1).getDay();
+                            var daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+
+                            for (var i = 0; i < firstDay; i++) {
+                                var empty = document.createElement("span");
+                                empty.className = "cal-day-empty";
+                                calendarDays.appendChild(empty);
+                            }
+
+                            for (var day = 1; day <= daysInMonth; day++) {
+                                var dateObj = new Date(viewYear, viewMonth, day);
+                                dateObj.setHours(0, 0, 0, 0);
+
+                                var btn = document.createElement("button");
+                                btn.type = "button";
+                                btn.className = "cal-day-btn";
+                                btn.textContent = day;
+
+                                if (dateObj < today) {
+                                    btn.disabled = true;
+                                } else {
+                                    btn.addEventListener("click", (function (d) {
+                                        return function () {
+                                            selectedDate = d;
+                                            selectedSlot = null;
+                                            bookingConfirmBox.style.display = "none";
+                                            renderCalendar();
+                                            fetchBookedSlots(formatDateStr(d));
+                                        };
+                                    })(dateObj));
+                                }
+
+                                if (selectedDate && formatDateStr(selectedDate) === formatDateStr(dateObj)) {
+                                    btn.classList.add("selected");
+                                }
+
+                                calendarDays.appendChild(btn);
+                            }
+                        }
+
+                        function renderSlots() {
+                            slotsContainer.innerHTML = "";
+                            if (!selectedDate) return;
+
+                            if (slotsLoading) {
+                                var loadingMsg = document.createElement("p");
+                                loadingMsg.style.color = "#00ff88";
+                                loadingMsg.textContent = "Checking availability...";
+                                slotsContainer.appendChild(loadingMsg);
+                                return;
+                            }
+
+                            slots.forEach(function (slot) {
+                                var isBooked = currentBookedSlots.indexOf(slot) !== -1;
+                                var btn = document.createElement("button");
+                                btn.type = "button";
+                                btn.className = "slot-btn" + (isBooked ? " booked" : "") + (selectedSlot === slot ? " active" : "");
+                                btn.textContent = slot + (isBooked ? " \uD83D\uDD12 Booked" : "");
+                                btn.disabled = isBooked;
+
+                                btn.addEventListener("click", function () {
+                                    selectedSlot = slot;
+                                    renderSlots();
+                                    showConfirmBox();
+                                });
+
+                                slotsContainer.appendChild(btn);
+                            });
+                        }
+
+                        function showConfirmBox() {
+                            if (!selectedDate || !selectedSlot) {
+                                bookingConfirmBox.style.display = "none";
+                                return;
+                            }
+                            var name = document.getElementById("name").value || "Guest";
+                            confirmNameLbl.textContent = name;
+                            confirmDateLbl.textContent = formatDateStr(selectedDate);
+                            confirmSlotLbl.textContent = selectedSlot;
+                            bookingConfirmBox.style.display = "block";
+                        }
+
+                        function resetBookingFlow() {
+                            selectedDate = null;
+                            selectedSlot = null;
+                            bookingConfirmBox.style.display = "none";
+                            slotsContainer.innerHTML = "";
+                            stepBooking.style.display = "block";
+                            stepSuccess.style.display = "none";
+                            var now = new Date();
+                            viewYear = now.getFullYear();
+                            viewMonth = now.getMonth();
+                            renderCalendar();
+                        }
+
+                        openBtn.addEventListener("click", function () {
+                            overlay.classList.add("show");
+                            resetBookingFlow();
+                        });
+
+                        closeBtn.addEventListener("click", function () {
+                            overlay.classList.remove("show");
+                        });
+
+                        overlay.addEventListener("click", function (e) {
+                            if (e.target === overlay) {
+                                overlay.classList.remove("show");
+                            }
+                        });
+
+                        prevMonthBtn.addEventListener("click", function () {
+                            viewMonth -= 1;
+                            if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
+                            renderCalendar();
+                        });
+
+                        nextMonthBtn.addEventListener("click", function () {
+                            viewMonth += 1;
+                            if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
+                            renderCalendar();
+                        });
+
+                        confirmBookingBtn.addEventListener("click", async function () {
+                            var name = document.getElementById("name").value;
+                            var email = document.getElementById("email").value;
+                            var phone = document.getElementById("phone").value;
+
+                            if (!name || !email || !phone) {
+                                showToast("Please fill your Name, Email & Phone in the form above first.", "error");
+                                return;
+                            }
+                            if (!selectedDate || !selectedSlot) {
+                                showToast("Please select a date and a time slot.", "error");
+                                return;
+                            }
+
+                            var dateStr = formatDateStr(selectedDate);
+
+                            confirmBookingBtn.disabled = true;
+                            confirmBookingBtn.textContent = "Booking...";
+
+                            try {
+                                var response = await fetch("https://alraheem-backend.vercel.app/book-consultation", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({
+                                        name: name,
+                                        email: email,
+                                        phone: phone,
+                                        date: dateStr,
+                                        slot: selectedSlot
+                                    })
+                                });
+
+                                var result = await response.json();
+
+                                if (result.success) {
+                                    successDateLbl.textContent = dateStr;
+                                    successSlotLbl.textContent = selectedSlot;
+                                    stepBooking.style.display = "none";
+                                    stepSuccess.style.display = "block";
+                                    showToast("Consultation booked successfully!", "success");
+                                } else if (response.status === 409) {
+                                    // Someone else grabbed this slot in the meantime
+                                    showToast(result.message || "This slot is no longer available.", "error");
+                                    fetchBookedSlots(dateStr);
+                                    selectedSlot = null;
+                                    bookingConfirmBox.style.display = "none";
+                                } else {
+                                    showToast(result.message || "Booking failed. Try again.", "error");
+                                }
+                            } catch (error) {
+                                showToast("Error booking consultation. Please try again.", "error");
+                            } finally {
+                                confirmBookingBtn.disabled = false;
+                                confirmBookingBtn.textContent = "Confirm Booking";
+                            }
+                        });
+
+                        bookAnotherBtn.addEventListener("click", function () {
+                            resetBookingFlow();
+                        });
+                    })();
+                  </script>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Get a Quote Section End -->
+
+        <!-- About Start -->
+        <!-- <div class="container-fluid py-5 my-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 position-relative">
+                            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                        <h5 class="text-primary">About Us</h5>
+                        <h1 class="mb-4">About Al Raheem Technologies Pvt Ltd and Our Ideas</h1>
+                        <p>Al Raheem Technologies Pvt Ltd was established in 2018 to provide
+                            information technology solutions for small to medium
+                            -sized
+                            businesses. Our mission is to cultivate professional
+                            relationships with our clients to provide effective and reliable
+                            information technology solutions for their needs. As an
+                            established technology
+                            -intensive company, we pride ourselves
+                            on providing
+                            a comprehensive suite of solutions comprising of
+                            custom software, web development, mobile application
+                            development, on/offsite services, software and web application
+                            testing.</p>
+                        <p class="mb-4">We will deliver state
+                            -of-the
+                            -art solutions in various
+                            areas including integrated business solutions, system
+                            applications, product development, Internet applications and
+                            communication
+                            & network management services. At
+                            Technology Solutions, we guarantee rapid, reliable and robust
+                            information technology solutions that work.</p>
+                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- About End -->
+
+
+        <!-- Services Start -->
+        <!-- <div class="container-fluid services py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Services</h5>
+                    <h1>Services We Provide</h1>
+                </div>
+                <div class="row g-5 services-inner">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-code fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/1.png">
+                                    <h4 class="mb-3">Mobile Solutions</h4>
+                                    <p class="mb-4"></p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/2.png">
+                                    <h4 class="mb-3">Design & Branding</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/3.png">
+                                    <h4 class="mb-3">Define User Experience</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/4.png">
+                                    
+                                    <h4 class="mb-3">Requirement Engineering</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/5.png">
+                                    
+                                    <h4 class="mb-3">Technical Development</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/6.png">
+                                    
+                                    <h4 class="mb-3">Content Management</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/7.png">
+                                    
+                                    <h4 class="mb-3">Quality Assurance</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/8.png">
+                                    
+                                    <h4 class="mb-3">Content Creation</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div style = "display: flex; align-items: center;" class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                                    <img style = "width: 30%;" src = "icons/9.png">
+                                    
+                                    <h4 class="mb-3">Support and Maintenance</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Services End -->
+
+
+        <!-- Project Start -->
+        <!-- <div class="container-fluid project py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Project</h5>
+                    <h1>Our Recently Completed Projects</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/1.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web design</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/2.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web design</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/3.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Multiple Platforms</h4>
+                                        <p class="m-0 text-white">Design and Build</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/4.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Multiple Platforms</h4>
+                                        <p class="m-0 text-white">Design and Build</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/5.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Multiple Platforms</h4>
+                                        <p class="m-0 text-white">Design and Build</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">keyword Research</h4>
+                                        <p class="m-0 text-white">keyword Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Project End -->
+
+
+        <!-- Blog Start -->
+        <!-- <div class="container-fluid blog py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Blog</h5>
+                    <h1>Latest Blog & News</h1>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By Daniel Martin</h5>
+                                <span class="text-secondary">24 March 2023</span>
+                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By Daniel Martin</h5>
+                                <span class="text-secondary">23 April 2023</span>
+                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By Daniel Martin</h5>
+                                <span class="text-secondary">30 jan 2023</span>
+                                <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                            </div>
+                            <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Blog End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="container-fluid py-5 mb-5 team">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Team</h5>
+                    <h1>Meet our expert Team</h1>
+                </div>
+                <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class="">Full Name</h4>
+                                    <p class="m-0">Designation</p>
+                                </div>
+                                <div class="team-icon d-flex justify-content-center pb-4">
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class="">Full Name</h4>
+                                    <p class="m-0">Designation</p>
+                                </div>
+                                <div class="team-icon d-flex justify-content-center pb-4">
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class="">Full Name</h4>
+                                    <p class="m-0">Designation</p>
+                                </div>
+                                <div class="team-icon d-flex justify-content-center pb-4">
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class="">Full Name</h4>
+                                    <p class="m-0">Designation</p>
+                                </div>
+                                <div class="team-icon d-flex justify-content-center pb-4">
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+
+        <!--  -->
+        <!-- <div class="container-fluid testimonial py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">What We Say</h5>
+                    <h1>What We Want</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Vision</h4>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">To be a global leader in mobile and web development, delivering innovative and transformative solutions that create positive impact on businesses, society, and the global digital landscape.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Mission</h4>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">To empower businesses with innovative, high-quality mobile and web solutions that enhance their digital presence and drive sustainable growth, while fostering long-term partnerships built on trust.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Value</h4>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">We are committed to delivering excellence, innovation, collaboration, and integrity, ensuring our clients receive reliable technology solutions and trusted long-term partnerships for success.</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <!-- <div class="container-fluid py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Get In Touch</h5>
+<<<<<<< HEAD
+                    <h1 class="mb-3">Contact For Any Query</h1>
+=======
+                    <h1 class="mb-3">Contact for any query</h1>
+>>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
+                    <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                </div>
+                <div class="contact-detail position-relative p-5">
+                    <div class="row g-5 mb-5 justify-content-center">
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Address</h4>
+                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-phone text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Call Us</h4>
+                                    <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-envelope text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Email Us</h4>
+                                    <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                            <div class="p-5 h-100 rounded contact-map">
+                                <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="p-5 rounded contact-form">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Project">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> -->
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s"
+        style="background-image: url('newimgs/foot.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+        >
+           <div class="container pt-5 pb-4">
+               <div class="row g-5">
+                   <div class="col-lg-3 col-md-6">
+                       <a href="index.html">
+                           <h1 class="text-secondary h4 animated fadeInUp">Al-Raheem Technologies <small class="text-white"> Pvt Ltd </small></h1>
+                       </a>
+                       <p class="mt-4 text-light"></p>
+                       <!-- <div class="d-flex hightech-link">
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                       </div> -->
+                   </div>
+                   <div class="col-lg-4 col-md-6">
+                       <a href="#" class="h3 text-secondary">Short Link</a>
+                       <div class="mt-4 d-flex flex-column short-link">
+                           <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                           <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                           <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                           <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                           <!-- <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a> -->
+                       </div>
+                   </div>
+                   <!-- <div class="col-lg-3 col-md-6">
+                       <a href="#" class="h3 text-secondary">Help Link</a>
+                       <div class="mt-4 d-flex flex-column help-link">
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                           <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                       </div>
+                   </div> -->
+                   <div class="col-lg-5 col-md-6">
+                       <a href="#" class="h3 text-secondary">Contact Us</a>
+                       <div class="text-white mt-4 d-flex flex-column contact-link">
+                           <a href="https://www.google.com/maps/search/?api=1&query=Easezen+Solutions%2C+Hasan+Chowk%2C+Mureer%2C+Murree+Rd%2C+Chamanzar+Colony%2C+Rawalpindi%2C+46000" target="_blank" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Earn Innovation Hub, Hasan Chowk, Mureer, Murree Rd, Chamanzar Colony, Rawalpindi, 46000</a>
+                           <a href="tel: +923317888806" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+92 331 788 8806</a>
+                           <a href="mailto:alraheemtechnologies1@gmail.com?Subject=Some%20subject" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>alraheemtechnologies1@gmail.com</a>
+                       </div>
+                   </div>
+               </div>
+               <hr class="text-light mt-5 mb-4">
+<<<<<<< HEAD
+               <div class="row copyright-row">
+                   <div class="col-md-6 copyright-text text-start">
+=======
+               <div class="row">
+                   <div class="col-md-6 text-center text-md-start">
+>>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
+                       <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>alraheemtechnologies  <small class="text-white"> Pvt Ltd </small></a>, All right reserved.</span>
+                   </div>
+                   <div class="col-md-6 text-center text-md-end">
+                       <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <!-- toast div -->
+        <div id="toast" class="toast"></div>
+
+    </body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Al-Raheem Technologies</title>
+        <link rel="icon" type="image/x-icon" sizes="38x38" href="favicon.ico">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- <style>
+            body {
+                background-image: url('newimgs/webback.jpg');
+                background-size: cover; /* Cover the entire viewport */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Don't repeat the image */
+                background-attachment: fixed; /* Keep the image fixed when scrolling */
+                /* Optional: Add a background color as fallback */
+                background-color: #f0f0f0;
+            }
+        </style> -->
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Easezen+Solutions%2C+Hasan+Chowk%2C+Mureer%2C+Murree+Rd%2C+Chamanzar+Colony%2C+Rawalpindi%2C+46000" target="_blank">
+                                <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                            </a>
+                            <script>
+                                document.getElementById('map-link').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    
+                                    fetch(this.href, { method: 'HEAD' })
+                                        .then(response => {
+                                            if (response.ok) {
+                                                window.open(this.href, '_blank');
+                                            } else {
+                                                alert('Map service unavailable');
+                                            }
+                                        })
+                                        .catch(error => {
+                                            alert('Map service unavailable');
+                                        });
+                                });
+                            </script>
+                            Earn Innovation Hub, Hasan Chowk, Mureer, Murree Rd, Chamanzar Colony, Rawalpindi, 46000
+                        </small>
+                        <small class="me-3 text-white-50"><a href="mailto:alraheemtechnologies1@gmail.com?Subject=Some%20subject"><i class="fas fa-envelope me-2 text-secondary"></i></a>alraheemtechnologies1@gmail.com</small>
+
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>We Build New And Innovative Apps</small></div>
+                    <div class="top-link">
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand py-2">
+                        <div class="brand-container">
+                            <img class="brand-logo me-2" src="logo/alraheem-tech-logo.png" alt="Logo">
+                            <div class="brand-text">
+                                <span class="brand-title">Al-Raheem <span class="text-secondary">Technologies</span></span>
+                                <span class="brand-sub">Pvt Ltd</span>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link active text-secondary">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="project.html" class="nav-item nav-link">Projects</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex px-3 align-items-center">
+                        <div id="phone-tada" class="d-flex align-items-center me-3">
+                          <a href="tel: +923317888806" class="position-relative animated tada infinite">
+                             <i class="fa fa-phone-alt text-white fa-2x"></i>
+                          <div class="position-absolute" style="top: -7px; left: 20px;">
+                          <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                         </div>
+                            </a>
+                             </div>
+                    </div>
+                    
+                        <!-- <div class="d-flex flex-column pe-4 border-end text-white">
+                            <span class="text-white-30">Call:<span class="text-secondary">  +92</span>
+                            <span class="text-secondary">3317888806</span>
+                        </div> -->
+                        <div class="d-flex align-items-center ms-4 position-relative animated tada infinite">
+                            <!-- <form id="searchForm" class="d-flex">
+                                <input type="text" name="query" id="searchQuery" placeholder="Search..." class="form-control" style="width: 150px;">
+                            </form> -->
+                            <a href="GetAQuote.html" class="me-2"><button type="button" class="btn btn-secondary rounded-pill carousel-content-btn3 animated fadeInLeft" style="padding: 12px 24px; margin: 0 10px;">Get A Quote</button></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#searchForm').on('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+        
+                    var query = $('#searchQuery').val();
+                    if (query.trim() === '') {
+                        alert('Please enter a search query');
+                        return;
+                    }
+        
+                    
+                    performSearch(query);
+                }); 
+        
+                function performSearch(query) {
+            // Convert query to lowercase for case-insensitive comparison
+            var normalizedQuery = query.trim().toLowerCase();
+        
+            // Define a mapping of queries to pages
+            var pageMappings = {
+                'home': 'index.html',
+                'about': 'about.html',
+                'contact': 'contact.html',
+                'services': 'service.html',
+                'projects': 'project.html'
+            };
+        
+            // Check if the query matches one of the predefined pages
+            if (pageMappings[normalizedQuery]) {
+                // Redirect to the corresponding page
+                window.location.href = pageMappings[normalizedQuery];
+            } else {
+                // Display "No search results found" message
+                alert('No search results found for: ' + query);
+            }
+        }
+        
+            });
+        </script>               
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">About Us</h1>
+                <!-- <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item" aria-current="page">About</li>
+                    </ol>
+                </nav> -->
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Fact Start -->
+        <!-- <div class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">99</h1>
+                            <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">25</h1>
+                            <h5 class="text-white mt-1">Thousands of successful business</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">120</h1>
+                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">5</h1>
+                            <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Fact End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid about-story-section">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 position-relative">
+                            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                       <h5 class="text-primary"><h2 style="color: rgb(120, 228, 120);">About Us</h2></h5>
+                        <h1 class="mb-4 text-light ">About Al Raheem Technologies Pvt Ltd and Our Ideas</h1>
+                        <p>Al Raheem Technologies Pvt Ltd was established in 2018 to provide
+                            information technology solutions for small to medium
+                            -sized
+                            businesses. Our mission is to cultivate professional
+                            relationships with our clients to provide effective and reliable
+                            information technology solutions for their needs. As an
+                            established technology
+                            -intensive company, we pride ourselves
+                            on providing
+                            a comprehensive suite of solutions comprising of
+                            custom software, web development, mobile application
+                            development, on/offsite services, software and web application
+                            testing.</p>
+                        <p class="mb-4">We will deliver state
+                            -of-the
+                            -art solutions in various
+                            areas including integrated business solutions, system
+                            applications, product development, Internet applications and
+                            communication
+                            & network management services. At
+                            Technology Solutions, we guarantee rapid, reliable and robust
+                            information technology solutions that work.</p>
+                        <!-- <a href="" class="btn btn-secondary rounded-pill px-5 py-3  text-white">More Details</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Team Start -->
+        
+        <!-- Team End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s"
+        style="background-image: url('newimgs/foot.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+        >
+           <div class="container pt-5 pb-4">
+               <div class="row g-5">
+                   <div class="col-lg-3 col-md-6">
+                       <a href="index.html">
+                           <h1 class="text-secondary h4 animated fadeInUp">Al-Raheem Technologies <small class="text-white"> Pvt Ltd </small></h1>
+                       </a>
+                       <p class="mt-4 text-light"></p>
+                       <!-- <div class="d-flex hightech-link">
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                           <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                       </div> -->
+                   </div>
+                   <div class="col-lg-4 col-md-6">
+                       <a href="#" class="h3 text-secondary">Short Link</a>
+                       <div class="mt-4 d-flex flex-column short-link">
+                           <a href="about.html" class="mb-2 active text-secondary"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                           <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                           <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                           <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                           <!-- <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a> -->
+                       </div>
+                   </div>
+                   <!-- <div class="col-lg-3 col-md-6">
+                       <a href="#" class="h3 text-secondary">Help Link</a>
+                       <div class="mt-4 d-flex flex-column help-link">
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                           <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                           <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                       </div>
+                   </div> -->
+                   <div class="col-lg-5 col-md-6">
+                       <a href="#" class="h3 text-secondary">Contact Us</a>
+                       <div class="text-white mt-4 d-flex flex-column contact-link">
+                           <a href="https://www.google.com/maps/search/?api=1&query=Easezen+Solutions%2C+Hasan+Chowk%2C+Mureer%2C+Murree+Rd%2C+Chamanzar+Colony%2C+Rawalpindi%2C+46000" target="_blank" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Earn Innovation Hub, Hasan Chowk, Mureer, Murree Rd, Chamanzar Colony, Rawalpindi, 46000</a>
+                           <a href="tel: +923317888806" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+92 331 788 8806</a>
+                           <a href="mailto:alraheemtechnologies1@gmail.com?Subject=Some%20subject" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>alraheemtechnologies1@gmail.com</a>
+                       </div>
+                   </div>
+               </div>
+               <hr class="text-light mt-5 mb-4">
+<<<<<<< HEAD
+               <div class="row copyright-row">
+                   <div class="col-md-6 copyright-text text-start">
+=======
+               <div class="row">
+                   <div class="col-md-6 text-center text-md-start">
+>>>>>>> fa2a1d569832b41fd94a16705850a1b89d06264d
+                       <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>alraheemtechnologies  <small class="text-white"> Pvt Ltd </small></a>, All right reserved.</span>
+                   </div>
+                   <div class="col-md-6 text-center text-md-end">
+                       <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
